@@ -3,35 +3,35 @@ body {
 }
 .main {
 	background-color: white;
-	margin-top: 110px;
-	padding-left: 100px;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	padding-left: 50px;
 	min-width: 1200px;
 	height: 500px;
 	position: relative;
 	z-index: 1;
 }
-.text-hadouken, .text-pose {
-font-size: 25px;
-font-family: serif;
-float: right;
+.text-hadouken, .text-pose, .text-pose2 {
+	font-size: 20px;
+	color: white;
 }
 .text-hadouken {
-padding-right: 60px;
-padding-top: 300px;
+	padding-right: 60px;
+	text-align: center;
 }
-.text-pose {
-padding-right: 20px;
-padding-top: 40px;
+.text-pose2 {
+	float: right;
 }
 .ryu {
-	width: 659px;
+	width: 550px;
 	height: 494px;
 }
-.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
-	width: 659px;
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool,
+.ryu-ready2, .ryu-still2, .ryu-cool2, .ryu-throwing2 {
+	width: 550px;
 	height: 494px;
 }
-.ryu-ready, .ryu-throwing, .ryu-cool {
+.ryu-ready, .ryu-throwing, .ryu-cool, .ryu-ready2, .ryu-throwing2, .ryu-cool2  {
 	display: none;
 }
 .ryu-ready {
@@ -57,7 +57,50 @@ padding-top: 40px;
 	top: 170px;
 	left:600px;
 }
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
-	background-repeat: no-repeat;	
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .ryu-still2,
+ .ryu-ready2, .ryu-throwing2, .ryu-cool2, .hadouken2 {
+	background-repeat: no-repeat;
 }
+
+.ryu2 {
+	float:right;
+	width: 550px;
+	height: 494px;
+	margin-top: -500px;
+}
+.ryu-still2, .ryu-ready2, .ryu-throwing2, .ryu-cool2, .hadouken2 {
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    -webkit-filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg);
+}
+.ryu-still2 {
+	background-image: url(../images/ryu-standing-still2.png);
+}
+.ryu-ready2 {
+	background-image: url(../images/ryu-ready-position2.gif);
+}
+.ryu-throwing2 {
+	background-image: url(../images/ryu-throwing-hadouken2.png);
+}
+.ryu-cool2 {
+	background-image: url(../images/ryu-cool2.gif);
+}
+.hadouken2 {
+	background-image: url(../images/hadouken2.gif);
+	z-index: 10;
+	top: 165px;
+	left: 660px;
+	position: absolute;
+	display: none;
+	width: 156px;
+	height: 90px;
+}
+
+
+
 
