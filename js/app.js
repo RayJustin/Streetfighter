@@ -84,3 +84,9 @@ function playHadouken() {
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();
 }
+
+
+
+$("p").text("<b> Some </b> new text")
+
+
