@@ -1,3 +1,4 @@
+
 body {
 	background-color: black;
 }
@@ -10,6 +11,7 @@ body {
 	height: 500px;
 	position: relative;
 	z-index: 1;
+	clear: both;
 }
 .text-hadouken, .text-pose, .text-pose2 {
 	font-size: 20px;
@@ -19,8 +21,16 @@ body {
 	padding-right: 60px;
 	text-align: center;
 }
+.text-pose {
+	float:left;
+	width: 40%;
+	padding-left: 10px;
+}
 .text-pose2 {
 	float: right;
+	width: 40%;
+	text-align: right;
+	padding-right: 10px;
 }
 .ryu {
 	width: 550px;
